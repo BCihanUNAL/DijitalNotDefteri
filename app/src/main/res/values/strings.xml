@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">18011603_DijitalNotDefteri</string>
+    <string name="renk_degistir">Notun Rengini Değiştir</string>
+    <string name="renk_secim_tanim">Renk Secimi</string>
+    <string name="map_key" translatable="false">AIzaSyB_oGr9mPIftqKe_NGu7Z8X4AnT7DMY2kU</string>
+    <string name="title_activity_google_map">GoogleMapActivity</string>
+    <string name="evet">evet</string>
+    <string name="hayir">hayır</string>
+</resources>

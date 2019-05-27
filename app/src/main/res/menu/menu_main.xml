@@ -1,0 +1,36 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.cihan.notdefteri.MainActivity">
+
+    <item
+        android:id="@+id/renk_sari"
+        android:orderInCategory="105"
+        android:title="Sarı"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/renk_mavi"
+        android:orderInCategory="106"
+        android:title="Mavi"></item>
+
+    <item
+        android:id="@+id/renk_kirmizi"
+        android:orderInCategory="107"
+        android:title="Kırmızı" />
+    <item
+        android:id="@+id/renk_yesil"
+        android:orderInCategory="108"
+        android:title="Yeşil" />
+    <item
+        android:id="@+id/renk_beyaz"
+        android:orderInCategory="109"
+        android:title="Beyaz" />
+    <item
+        android:id="@+id/action_not_ara"
+        android:icon="@drawable/ic_search_black_24dp"
+        android:orderInCategory="104"
+        android:title="Search"
+        app:showAsAction="ifRoom"
+        app:actionViewClass="android.support.v7.widget.SearchView"/>
+
+</menu>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.cihan.notdefteri.NotificationZamanActivity">
+
+    <Button
+        android:id="@+id/tarihButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:text="tarih seç"
+        app:layout_constraintEnd_toStartOf="@+id/saatButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/saatButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:text="saat seç"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tarihButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tarihButton" />
+
+    <EditText
+        android:id="@+id/adetEditText"
+        android:layout_width="132dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="64dp"
+        android:ems="10"
+        android:hint="Tekrar sayısı"
+        android:inputType="number"
+        app:layout_constraintEnd_toStartOf="@+id/aralikEditText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tarihButton" />
+
+    <EditText
+        android:id="@+id/aralikEditText"
+        android:layout_width="124dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:ems="10"
+        android:hint="Tekrar aralığı"
+        android:inputType="number"
+        app:layout_constraintBaseline_toBaselineOf="@+id/adetEditText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/adetEditText" />
+
+    <Button
+        android:id="@+id/zamanHatirlatmaButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Hatırlatma Oluştur"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/aralikEditText" />
+
+    <TextView
+        android:id="@+id/tarihTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/tarihButton"
+        app:layout_constraintTop_toBottomOf="@+id/tarihButton"
+        tools:text="DD/GG/YYYY" />
+
+    <TextView
+        android:id="@+id/saatTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="24dp"
+        android:layout_marginStart="24dp"
+        android:textSize="18sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tarihTextView"
+        app:layout_constraintStart_toStartOf="@+id/saatButton"
+        tools:text="tv" />
+
+</android.support.constraint.ConstraintLayout>
